@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.postList-container {
+    margin: 40px;
+}
+
+.post-Modal {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: solid #eae5e5;
+    margin-top: 15px;
+    width: 90%;
+    background-color: white;
+    box-shadow: 5px 10px 5px 5px #d3cdcd;
+}
+
+.auther-Name {
+    padding: 10px;
+    font-weight: bolder;
+    background-color: white;
+    color: gray;
+}
+
+.blog-Title {
+    color: darkgray;
+    font-size: 18px;
+}
+
+.BlogContent {
+    background-color: #f6f6f6;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.readMore {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.flex-container span {
+    cursor: pointer;
+}
+.row {
+    display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 10px;
+   /* Should be removed. Only for demonstration */
+  }
+
+.flex-container{
+    margin-top: 10px;
+}
+.btn-delete{
+    width: 15%;
+    padding: 7px;
+    background-color: #6bcb6b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn-delCancel{
+    width: 15%;
+    padding: 7px;
+    background-color: #e32121;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}

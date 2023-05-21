@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ScriBBler-BlogingWEbsite</title>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./commen.css">
+</head>
+
+<body style="background-image: url('./background.jpg'); background-size: cover;">
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="main-container">
+        <div class="header-container">
+            <div class="header">
+                <div class="logo-container">
+                    <p class="logo">ScriBBler</p>
+                    <p class="logo-subheading">Explore, Imagine, Create</p>
+                </div>
+                <div class="btnUsercredintial">
+                    <button class="btn-signUp" onclick="openSignUp()">Sign Up</button>
+                    <button class="btn-signIn" onclick="openSignIn()">Sign In</button>
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <div class="blog-container">
+            <div class="btnfex-container">
+                <button class="btn-allPost" onclick="displayAllPost()">All Post</button>
+                <button class="btn-createPo" onclick="createPost()">Create Post</button>
+            </div>
+        </div>
+
+        <!-- signUp Start -->
+        <div id="SignUpModal" class="SignUpModal">
+            <div class="modal-content">
+                <div class="flex-container">
+                    <h1 class="modal-heading">Get Started</h1>
+                    <span onclick="closeModule(SignUpModal)" class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <hr class="modal-horizontal-rule">
+                <form class="modal-form">
+                    <label for="name" class="modal-label">Name</label>
+                    <input type="text" class="modal-textbox" name="name" placeholder="Enter your name" required>
+                    <label for="username" class="modal-label">Username</label>
+                    <input type="text" class="modal-textbox" name="username" placeholder="Enter your username" required>
+                    <label for="password" class="modal-label">Password</label>
+                    <input type="password" class="modal-textbox" name="password" placeholder="Enter your password"
+                        required>
+                    <label for="confirmpassword" class="modal-label">confirm Password</label>
+                    <input type="password" class="modal-textbox" name="password" placeholder="Re-enter your password"
+                        required>
+                    <button class="btn-modal-submit" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <!-- signUp ends -->
+
+        <!-- signIn Start -->
+
+        <div id="SignInModal" class="Modal">
+            <div class="modal-content">
+                <div class="flex-container">
+                    <h1 class="modal-heading">WelCome Back</h1>
+                    <span onclick="closeModule(SignInModal)" class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <hr class="modal-horizontal-rule">
+                <form class="modal-form">
+                    <label for="username" class="modal-label">Username</label>
+                    <input type="text" class="modal-textbox" name="username" placeholder="Enter your username" required>
+                    <label for="password" class="modal-label">Password</label>
+                    <input type="password" class="modal-textbox" name="password" placeholder="Enter your password"
+                        required>
+                    <button class="btn-modal-submit" type="submit">Sign In</button>
+                </form>
+                <div class="signup-message">
+                    Not a member?
+                    <span class="sigup-link" onclick="openSignUpCloseSignIn()">Sign Up</span>
+                </div>
+            </div>
+        </div>
+        <!-- signIn ends -->
+        <div id="createPostModal" class="Modal">
+            <div class="penmodal-content">
+                <div class="flex-container">
+                    <h1 class="modal-heading">Pen Your Post</h1>
+                    <span onclick="closeModule(createPostModal)" class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <hr class="modal-horizontal-rule">
+                <form class="modal-form">
+                    <label for="title" class="modal-label">Title</label>
+                    <input type="text" class="modal-textbox" name="title" placeholder="Enter title of your post"
+                        required>
+                    <label for="contents" class="modal-label">Contents</label>
+                    <textarea name="textarea" class="modal-textarea" cols="30" rows="10"
+                        placeholder="Enter the contents of your post"></textarea>
+                    <button class="btn-createPost" onclick="">Create</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./comman.js"></script>
+    <script src="https://kit.fontawesome.com/609e8297b2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

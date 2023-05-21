@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./commen.css">
+    <link rel="stylesheet" href="./post.css">
+    <title>ScriBBler-BlogingWEbsite</title>
+</head>
+
+<body>
+    <!-- header-star -->
+    <div class="header-container">
+        <div class="header">
+            <div class="logo-container">
+                <a href="./index.html">
+                    <p class="logo">ScriBBler</p>
+                    <p class="logo-subheading">Explore, Imagine, Create</p>
+                </a>
+            </div>
+            <div class="btnUsercredintial">
+                <button class="btn-signUp" onclick="openSignUp()">Sign Up</button>
+                <button class="btn-signIn" onclick="openSignIn()">Sign In</button>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <div class="post-main-container">
+        <div class="post-title" contenteditable="false">
+            <h4 id="postTitle">Everything you should know about "Module" & "required" in Node.js</h4>
+
+        </div>
+        <div id="authorEditbtnContainer" class="flex-container">
+            <span class="post-author">Srishti Gupta</span>
+            <button type="button" id="editPostContainer" class="btnEdit" onclick="toggelEditSave()"><span class="edit-txt">Edit</span><i
+                    class="fa fa-edit"></i></button>
+        </div>
+        <div id="postText" contenteditable="false">
+            Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and
+            more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes
+            JavaScript code outside a web browser.
+            Node.js lets developers use JavaScript to write command line tools and for server-side scripting. The
+            ability to run JavaScript code on the server is often used to generate dynamic web page content before the
+            page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere"
+            paradigm,[6] unifying web-application development around a single programming language, as opposed to using
+            different languages for the server- versus client-side programming.
+            Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize
+            throughput and scalability in web applications with many input/output operations, as well as for real-time
+            Web applications (e.g., real-time communication programs and browser games).
+            The Node.js distributed development project was previously governed by the Node.js Foundation,[8] and has
+            now merged with the JS Foundation to form the OpenJS Foundation. OpenJS Foundation is facilitated by the
+            Linux Foundation's Collaborative Projects program.
+
+        </div>
+        <div class="like-post">
+            <button id="likePostBtn" onclick="LikeCount()">
+                <i class="fa fa-thumbs-up"></i><span class="like-txt">Like</span>
+            </button><br>
+            <span id="likeCount" class="likecount">Be the first one to like this!</span>
+        </div>
+
+        <!-- comment section -->
+        <div class="comment-container">
+            <div class="flexComment-container">
+                <textarea name="" id="comment-text"  placeholder="Leave A Comment..."></textarea>
+                <button class="btn-comment" onclick="addComment('comment-text')">Comment</button>
+            </div>
+
+            <div class="display-AllComments">
+                <h3 class="commentSec-heading">All Comments</h3>
+                <div class="comment-list">
+                    <ul id="comme">
+                        <!-- <li></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- signup modal -->
+        <div id="SignUpModal" class="SignUpModal">
+            <div class="modal-content">
+                <div class="flex-container">
+                    <h1 class="modal-heading">Get Started</h1>
+                    <span onclick="closeModule(SignUpModal)" class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <hr class="modal-horizontal-rule">
+                <form class="modal-form">
+                    <label for="name" class="modal-label">Name</label>
+                    <input type="text" class="modal-textbox" name="name" placeholder="Enter your name" required>
+                    <label for="username" class="modal-label">Username</label>
+                    <input type="text" class="modal-textbox" name="username" placeholder="Enter your username" required>
+                    <label for="password" class="modal-label">Password</label>
+                    <input type="password" class="modal-textbox" name="password" placeholder="Enter your password"
+                        required>
+                    <label for="confirmpassword" class="modal-label">confirm Password</label>
+                    <input type="password" class="modal-textbox" name="password" placeholder="Re-enter your password"
+                        required>
+                    <button class="btn-modal-submit" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <!-- SignUp Ends -->
+
+        <!-- Sign-In Starts -->
+        <div id="SignInModal" class="Modal">
+            <div class="modal-content">
+                <div class="flex-container">
+                    <h1 class="modal-heading">WelCome Back</h1>
+                    <span onclick="closeModule(SignInModal)" class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <hr class="modal-horizontal-rule">
+                <form class="modal-form">
+                    <label for="username" class="modal-label">Username</label>
+                    <input type="text" class="modal-textbox" name="username" placeholder="Enter your username" required>
+                    <label for="password" class="modal-label">Password</label>
+                    <input type="password" class="modal-textbox" name="password" placeholder="Enter your password"
+                        required>
+                    <button class="btn-modal-submit" type="submit">Sign In</button>
+                </form>
+                <div class="signup-message">
+                    Not a member?
+                    <span class="sigup-link" onclick="openSignUpCloseSignIn()">Sign Up</span>
+                </div>
+            </div>
+        </div>
+        <!-- Sign-In Ends -->
+
+        <script src="./post.js"></script>
+        <script src="./comman.js"></script>
+        <script src="https://kit.fontawesome.com/609e8297b2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

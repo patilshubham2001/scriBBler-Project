@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#postTitle {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: bolder;
+}
+
+.flex-container {
+    margin: 20px 40px 20px 40px;
+}
+
+.post-author {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.btnEdit {
+    font-size: 15px;
+    padding: 10px;
+    background-color: #ff3659;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px red;
+    border-radius: 7%;
+}
+
+
+#postText {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 18px;
+}
+.post-title{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.like-post {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+#likePostBtn {
+    background-color: #ff3659;
+    color: white;
+    cursor: pointer;
+    border-radius: 7%;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 10px 20px -8px red;
+    margin-bottom: 10px;
+}
+
+.likecount {
+    color: gray;
+}
+
+.like-txt {
+    margin-left: 10px;
+    font-size: 10px
+}
+.edit-txt{
+    margin-right: 10px;
+}
+.comment-container{
+    margin-left: 40px;
+    margin-top: 25px;
+}
+.flexComment-container{
+    display: flex;
+    flex-direction: column;
+    width: 7%;
+}
+#comment-text{
+    width: 730px;
+    height: 56px
+}
+.btn-comment{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff3659;
+    color: white;
+    border: none;
+    border-radius: 7%;
+    box-shadow: 0 10px 20px -8px red;
+    cursor: pointer;
+}
+.commentSec-heading{
+   margin-top: 15px;
+}
+
+.comment-list ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 20px;
+    border: solid #c6c6c6 10px;
+    width: 50%;
+    padding: 10px;
+}
